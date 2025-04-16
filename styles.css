@@ -64,7 +64,6 @@ input:checked + .slider:before {
 header {
     position: relative;
     height: 100vh;
-    background-image: url('https://i.imgur.com/JY5QHZ9.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
