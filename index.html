@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra Média - O Mundo de Tolkien</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="parallax">
+        <div class="header-content">
+            <h1 id="main-title">Terra Média</h1>
+            <p class="subtitle">O Mundo de J.R.R. Tolkien</p>
+        </div>
+        <div class="ring-animation"></div>
+    </header>
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#livros" class="nav-link">Livros</a></li>
+            <li><a href="#personagens" class="nav-link">Personagens</a></li>
+            <li><a href="#mapa" class="nav-link">Mapa Interativo</a></li>
+            <li><a href="#galeria" class="nav-link">Galeria</a></li>
+            <li><a href="#curiosidades" class="nav-link">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider"></span>
+        </label>
+        <span id="theme-label">Modo Lothlórien</span>
+    </div>
+
+    <main>
+        <section id="home" class="section">
+            <h2>Bem-vindo à Terra Média</h2>
+            <p>Explore o mundo mágico criado por J.R.R. Tolkien, autor de O Senhor dos Anéis, O Hobbit e muitas outras obras fantásticas.</p>
+            
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="timeline-event" data-year="1937">
+                        <div class="event-content">O Hobbit é publicado</div>
+                    </div>
+                    <div class="timeline-event" data-year="1954">
+                        <div class="event-content">A Sociedade do Anel publicado</div>
+                    </div>
+                    <div class="timeline-event" data-year="1954">
+                        <div class="event-content">As Duas Torres publicado</div>
+                    </div>
+                    <div class="timeline-event" data-year="1955">
+                        <div class="event-content">O Retorno do Rei publicado</div>
+                    </div>
+                    <div class="timeline-event" data-year="1977">
+                        <div class="event-content">O Silmarillion publicado</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="livros" class="section">
+            <h2>As Obras de Tolkien</h2>
+            <div class="books-grid">
+                <div class="book-card" data-book="hobbit">
+                    <div class="book-cover">
+                        <img src="img/ohobbit.png" alt="Capa do livro O Hobbit">
+                    </div>
+                    <h3>O Hobbit</h3>
+                    <button class="btn-more">Saiba Mais</button>
+                </div>
+                <div class="book-card" data-book="lotr">
+                    <div class="book-cover">
+                        <img src="img/senhordosaneis.png" alt="Capa do livro O Senhor dos Anéis">
+                    </div>
+                    <h3>O Senhor dos Anéis</h3>
+                    <button class="btn-more">Saiba Mais</button>
+                </div>
+                <div class="book-card" data-book="silmarillion">
+                    <div class="book-cover">
+                        <img src="img/silmarillion.png" alt="Capa do livro O Silmarillion">
+                    </div>
+                    <h3>O Silmarillion</h3>
+                    <button class="btn-more">Saiba Mais</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="personagens" class="section">
+            <h2>Personagens Icônicos</h2>
+            <div class="character-carousel">
+                <div class="character-card" data-character="frodo">
+                    <div class="character-image">
+                        <img src="img/frodo.png" alt="Frodo Bolseiro">
+                    </div>
+                    <h3>Frodo Bolseiro</h3>
+                    <p class="character-desc">Portador do Anel</p>
+                </div>
+                <div class="character-card" data-character="gandalf">
+                    <div class="character-image">
+                        <img src="img/Gandalf.png" alt="Gandalf">
+                    </div>
+                    <h3>Gandalf</h3>
+                    <p class="character-desc">O Mago Cinzento</p>
+                </div>
+                <div class="character-card" data-character="aragorn">
+                    <div class="character-image">
+                        <img src="img/aragorn.png" alt="Aragorn">
+                    </div>
+                    <h3>Aragorn</h3>
+                    <p class="character-desc">Herdeiro de Isildur</p>
+                </div>
+                <div class="character-card" data-character="galadriel">
+                    <div class="character-image">
+                        <img src="img/galadriel.png" alt="Galadriel">
+                    </div>
+                    <h3>Galadriel</h3>
+                    <p class="character-desc">Senhora de Lothlórien</p>
+                </div>
+                <div class="character-card" data-character="sauron">
+                    <div class="character-image">
+                        <img src="img/sauron.png" alt="sauron">
+                    </div>
+                    <h3>Sauron</h3>
+                    <p class="character-desc">O Senhor das Trevas</p>
+                </div>
+                <div class="character-card" data-character="legolas">
+                    <div class="character-image">
+                        <img src="img/legolas.png" alt="legolas">
+                    </div>
+                    <h3>Legolas</h3>
+                    <p class="character-desc">Príncipe do Reino da Floresta</p>
+                </div>
+                <div class="character-card" data-character="samwise gamgee">
+                    <div class="character-image">
+                        <img src="img/sam.png" alt="samwise">
+                    </div>
+                    <h3>Samwise Gamgee</h3>
+                    <p class="character-desc">Sam,Fiel Escudeiro</p>
+                </div>
+                <div class="character-card" data-character="gollum">
+                    <div class="character-image">
+                        <img src="img/gollum.png" alt="gollum">
+                    </div>
+                    <h3>Gollum</h3>
+                    <p class="character-desc">Smigle</p>
+                </div>
+                <div class="character-card" data-character="elrond">
+                    <div class="character-image">
+                        <img src="img/elrond.png" alt="Elrond">
+                    </div>
+                    <h3>Elrond</h3>
+                    <p class="character-desc">Senhor de Valfenda</p>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button id="prev-btn">← Anterior</button>
+                <button id="next-btn">Próximo →</button>
+            </div>
+        </section>
+
+        <section id="mapa" class="section">
+            <h2>Mapa Interativo da Terra Média</h2>
+            <div class="map-container">
+                <img src="img/mapaterramedia.png" alt="Mapa da Terra Média" class="middle-earth-map">
+                <div class="map-location" style="top: 30%; left: 45%;" data-location="hobbiton"></div>
+                <div class="map-location" style="top: 25%; left: 55%;" data-location="rivendell"></div>
+                <div class="map-location" style="top: 40%; left: 65%;" data-location="mordor"></div>
+                <div class="map-location" style="top: 20%; left: 70%;" data-location="erebor"></div>
+            </div>
+            <div class="location-info">
+                <h3 id="location-name">Selecione um local no mapa</h3>
+                <p id="location-desc">Clique em um dos pontos marcados no mapa para aprender mais sobre esse local na Terra Média.</p>
+            </div>
+        </section>
+
+        <section id="galeria" class="section">
+            <h2>Galeria de Arte</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-art="fellowship">
+                    <img src="img/asociedadedoanel.png" alt="A Sociedade do Anel">
+                    <div class="art-overlay">
+                        <h3>A Sociedade do Anel</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" data-art="hobbit">
+                    <img src="img/bilboesmaug.png" alt="Bilbo e Smaug">
+                    <div class="art-overlay">
+                        <h3>Bilbo e Smaug</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" data-art="minas-tirith">
+                    <img src="img/minas-tirith.png" alt="Minas Tirith">
+                    <div class="art-overlay">
+                        <h3>Minas Tirith</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" data-art="mordor">
+                    <img src="img/mordor.png" alt="Mordor">
+                    <div class="art-overlay">
+                        <h3>Mordor</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" data-art="hobbiton">
+                    <img src="img/condado.png" alt="Hobbiton">
+                    <div class="art-overlay">
+                        <h3>Hobbiton</h3>
+                    </div>
+                </div>
+                <div class="gallery-item" data-art="rivendell">
+                    <img src="img/valfenda.png" alt="Rivendell">
+                    <div class="art-overlay">
+                        <h3>Rivendell</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="curiosidades" class="section">
+            <h2>Curiosidades da Terra Média</h2>
+            <div class="curiosities-grid">
+                <div class="curiosity-card">
+                    <h3>Inspiração linguística</h3>
+                    <p>Tolkien era linguista e criou idiomas completos, como o élfico Quenya e Sindarin, antes mesmo das histórias.</p>
+                </div>
+                <div class="curiosity-card">
+                    <h3>A origem do Um Anel</h3>
+                    <p>O Um Anel foi forjado por Sauron em Orodruin (Monte da Perdição) com o objetivo de dominar os outros Anéis do Poder.</p>
+                </div>
+                <div class="curiosity-card">
+                    <h3>Personagens imortais</h3>
+                    <p>Elfos como Legolas e Galadriel são praticamente imortais — eles não envelhecem nem adoecem.</p>
+                </div>
+                <div class="curiosity-card">
+                    <h3>O "verdadeiro herói"</h3>
+                    <p>Tolkien já afirmou que Samwise é o verdadeiro herói de O Senhor dos Anéis.</p>
+                </div>
+                <div class="curiosity-card">
+                    <h3>A Terra Média é parte de nosso mundo</h3>
+                    <p>Tolkien afirmou que a Terra Média representa um passado fictício da própria Terra, milhares de anos antes da nossa era.</p>
+                </div>
+                <div class="curiosity-card">
+                    <h3>Aragorn viveu mais de 200 anos</h3>
+                    <p>Como descendente dos Dúnedain, Aragorn tem vida longa. Ele viveu até os 210 anos de idade.</p>
+                </div>
+                <div class="curiosity-card">
+                    <h3>Os Orcs eram Elfos corrompidos</h3>
+                    <p>Segundo algumas versões da mitologia de Tolkien, os primeiros Orcs foram Elfos capturados e torturados por Morgoth.</p>
+                </div>
+                <div class="curiosity-card">
+                    <h3>Gollum tinha cerca de 600 anos</h3>
+                    <p>Devido ao poder do Um Anel, Sméagol (Gollum) viveu muito além da expectativa de vida de um hobbit comum.</p>
+                </div>
+                
+                
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Terra Média - Blog não oficial sobre J.R.R. Tolkien</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">♔</a>
+                <a href="#" class="social-icon">♕</a>
+                <a href="#" class="social-icon">♖</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Título do Modal</h2>
+            <div id="modal-body">Conteúdo do modal aqui...</div>
+        </div>
+    </div>
+    <!-- Quiz Modal -->
+<div id="quiz-modal" class="modal">
+    <div class="modal-content quiz-content">
+      <span class="close-btn" onclick="closeQuiz()">&times;</span>
+      <h2>Quiz: Você conhece a Terra Média?</h2>
+      <div id="quiz-container">
+        <!-- Pergunta será injetada aqui via JS -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Botão para abrir o quiz -->
+  <button id="quiz-btn" onclick="openQuiz()">Iniciar Quiz</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
